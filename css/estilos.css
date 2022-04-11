@@ -8,19 +8,21 @@
   border:0
   }
 
+  /* Estilizações globais */
+
   body {
     max-width: 1366px;
 
     margin: auto;
   }
 
-  /* Works on Firefox */
+  /* Firefox */
   * {
     scrollbar-width: thin;
     scrollbar-color: #E7E7E7 #BFBFBF;
   }
 
-  /* Works on Chrome, Edge, and Safari */
+  /* Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
     width: 3px;
   }
@@ -225,11 +227,13 @@ ul#Lista-menu > li > a {
 }
 
 .SubTitle-content {
-  font-size: 15px;
-  color: #ED7839;
-
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 600;
   font-family: Roboto;
+  
+  line-height: 25px;
+  
+  color: #ED7839;
 }
 
 .Text-button {
@@ -260,7 +264,7 @@ div#Buttons button {
   display: flex;
   flex-direction: row;
 
-  padding: 0 45px;
+  padding: 0 25px;
 }
 
 #Details {
@@ -301,9 +305,11 @@ div#Details-content h1 {
 
 div#Details-content h2 {
   font-family: Quicksans;
-  font-size: 17px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 500;
+
+  color: #535252;
 
   line-height: 20px;
 
@@ -405,4 +411,28 @@ div#Abstract-subtitle-content p {
   color: #5C5C5C;
 
   text-align: center;
+}
+
+.Button-content {
+  padding: 5px 10px;
+  border-radius: 5px;
+
+  background-color: #ED7839;
+
+  color: #FFF;
+
+  z-index: 1;
+}
+
+#Topic {
+  display: flex;
+  justify-content: center;
+}
+
+#hr-topic {
+  position: relative;
+  border: 1px solid #E7E7E7;
+  top: -13px;
+  width: 95%;
+  margin: auto;
 }
