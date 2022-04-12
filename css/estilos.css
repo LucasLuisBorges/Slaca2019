@@ -59,6 +59,10 @@ img {
   object-fit: cover
 }
 
+video {
+  width: 100%;
+}
+
 /* Estilização Header Menu*/
 
 #Menu-principal {
@@ -113,7 +117,7 @@ ul#Lista-menu > li > a {
 /* Estilização Header Right */
 
 #Header-right {
-  width: 100%;
+  width: 100vw;
 }
 
 #Header-top-right {
@@ -536,6 +540,176 @@ div#Interactions button i {
 /* Estilizando footer */
 
 #Footer {
+  width: 90%;
+  height: 181px;
   display: flex;
   justify-content: center;
+  margin: auto;
 }
+
+
+@media screen and (max-width: 1035px) {
+  body {
+    max-width: 1035px;
+
+    margin: auto;
+  }
+
+  #Container {
+    flex-direction: column;
+  }
+
+  #Menu-principal {
+    width: 100%;
+    display: flex;
+    display: none;
+  }
+
+  .Subtitle-header {
+    font-size: 10px;
+    font-weight: 400;
+    font-family: Roboto, sans-serif;
+  
+    line-height: 15px;
+  
+    color: #725C5C;
+  }
+  
+  .Title-header {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Roboto, sans-serif;
+  
+    line-height: 25px;
+  
+    color: #725C5C;
+  }
+  
+  .Title-profile {
+    display: none;
+  }
+  
+  .Subtitle-profile {
+    display: none;
+  }
+  
+  .Image-profile {
+    height: 35px;
+    width: 35px;
+  
+    border-radius: 17px;
+  
+    align-items: center;
+  }
+  
+  .Info-profile {
+    margin-right: 5px;
+  }
+
+  video {
+    width: 70%;
+  }
+
+  #Footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 977px) {
+    video {
+      width: 100%;
+    }
+
+    body {
+      max-width: 977px;
+  
+      margin: auto;
+    }
+
+    #Area-buttons {
+      display: none;
+    }
+
+    #Details {
+      display: none;
+    }
+
+    @media screen and (max-width: 797px) {
+      .Title-content {
+        width: 650px;
+        font-size: 19px;
+        font-weight: 600;
+        font-family: Roboto;
+  
+        color: #ED7839;
+      }
+
+      div#Abstract-subtitle-content {
+        padding: 15px;
+        width: 350px;
+      
+        margin: auto;
+      }
+
+      #Selection {
+        display: none;
+      }
+
+      @media screen and (max-width: 665px) {
+        .Title-content {
+          width: 450px;
+          font-size: 16px;
+          font-weight: 600;
+          font-family: Roboto;
+    
+          color: #ED7839;
+        }
+
+        .Image-profile {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 665px) {
+        .Subtitle-header {
+          font-size: 8px;
+          font-weight: 400;
+          font-family: Roboto, sans-serif;
+      
+        
+          color: #725C5C;
+        }
+        
+        .Title-header {
+          font-size: 12px;
+          font-weight: 400;
+          font-family: Roboto, sans-serif;
+        
+          color: #725C5C;
+        }
+      }
+
+      @media screen and (max-width: 665px) {
+        .Title-content {
+          width: 320px;
+          font-size: 12px;
+          font-weight: 600;
+          font-family: Roboto;
+    
+          color: #ED7839;
+        }
+
+        div#Abstract-subtitle-content {
+          padding: 15px;
+          width: 200px;
+        
+          margin: auto;
+        }
+
+        .Subtitle-header {
+          display: none;
+        }
+      }
+    }
+  }
+} 
