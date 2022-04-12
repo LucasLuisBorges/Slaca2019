@@ -254,6 +254,11 @@ div#Buttons button {
   color: #FFF;
 
   margin-right: 5px;
+  cursor: pointer;
+}
+
+div#Buttons button:hover {
+  background-color: #f78a4f;
 }
 
 .spacing-icon {
@@ -347,6 +352,11 @@ div#SubDom p {
   padding: 20px 45px 0 45px;
 }
 
+#Discussion {
+  padding: 20px 45px 0 45px;
+  margin-bottom: 75px;
+}
+
 #Abstract-content {
   border: 1px solid #ECECEC;
 }
@@ -417,11 +427,12 @@ div#Abstract-subtitle-content p {
   padding: 5px 10px;
   border-radius: 5px;
 
-  background-color: #ED7839;
+  background: linear-gradient(#FFB354 30%, #EE7A3A 100%);
 
   color: #FFF;
 
   z-index: 1;
+  cursor: pointer;
 }
 
 #Topic {
@@ -435,4 +446,96 @@ div#Abstract-subtitle-content p {
   top: -13px;
   width: 95%;
   margin: auto;
+}
+
+.buttonicon {
+  margin-right: 3px;
+}
+
+#Feedback {
+  width: 90%;
+  margin: auto;
+
+  border: 1px solid #E7E7E7;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.Align {
+  padding: 20px;
+}
+
+div#Feedback h1 {
+  font-family: Quicksand;
+  font-weight: bold;
+  font-size: 16px;
+
+  color: #ED7839;
+}
+
+div#Feedback p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #5C5C5C;
+
+  margin-top: 5px;
+}
+
+div#Feedback p.Subparagrafo {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #4D4D4D;
+
+  margin-bottom: 5px;
+}
+
+#Interactions {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div#Interactions p {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 350;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #757575;
+}
+
+div#Interactions i {
+  color: #ED7839;
+}
+
+div#Interactions button {
+  background-color: #ED7839;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+div#Interactions button i {
+  color: #FFF;
+}
+
+/* Estilizando footer */
+
+#Footer {
+  display: flex;
+  justify-content: center;
 }
